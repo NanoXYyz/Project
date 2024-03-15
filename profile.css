@@ -1,0 +1,245 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, sans-serif; /* Ensures text is readable */
+  display: flex;
+  justify-content: center; /* Centers the contact group */
+  align-items: center; /* Align items vertically */
+  min-height: 100vh; /* Full screen height */
+  /*background: url(prfl.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;*/
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.sidebar {
+  position: fixed;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: #000000;
+  transition: all .5s ease;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: grey;
+  user-select: none;
+}
+
+header img{
+  border: none;
+  outline: none;
+  height: 40%;
+  width: 30%;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+
+.icon-bar a:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+.input-contact, .input-contact-toni {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px; /* Rounded corners for the boxes */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds shadow to the boxes */
+  width: calc(50% - 40px); /* Adjust width */
+  box-sizing: border-box;
+}
+
+.contact-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Space between the contact boxes */
+  width: 100%;
+  max-width: 1000px; /* Max width of the contact group */
+}
+
+.input-contact ul, .input-contact-toni ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center aligns the text and items */
+}
+
+.input-contact ul img, .input-contact-toni ul img {
+  width: 120px; /* Fixed width for images */
+  height: 120px; /* Fixed height for images */
+  border-radius: 50%; /* Makes the image circular */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+
+.sidebar ul a i{
+  margin-right: 16px;
+}
+
+#check{
+  display: none;
+}
+
+#btn{
+  color: #ffffff;
+}
+
+label #btn,label #cancel{
+  position: absolute;
+  background: #000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label #btn{
+  left: 250px;
+  top: 25px;
+  font-size: 35px;
+  color: #ffffff;
+  background: #000000;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+#check:checked ~ section{
+  margin-left: 0px;
+}
+
+ul h3 {
+  margin: 10px 0; /* Space around the name */
+}
+
+ul li a {
+  display: inline-block;
+  margin: 5px 0; /* Space between links */
+  color: #333; /* Dark text for links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+ul li a i {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .schol {
+    margin-top: 20px; /* Tambahkan margin di atas div school */
+  }
+}
+/*button*/
+.contact-group button {
+  margin: 10px;
+  border-radius: 13px;
+  position: relative;
+  text-align: center;
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+
+.contact-group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Add a gradient background to the contact section */
+.contact-group {
+  background: linear-gradient(135deg, #ffffff, #f0f0f0); /* Adjust gradient colors as needed */
+  padding: 50px; /* Add padding to give space around the contact elements */
+}
+
+/* Alternatively, you can use a background overlay */
+.contact-group {
+  position: relative;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust opacity and color as needed */
+}
+
+/* Adjust contact elements' styles accordingly */
+.input-contact,
+.input-contact-toni {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 40px);
+  box-sizing: border-box;
+}
+
+/* Additional adjustments as needed */
+
+
+/*program school*/
+.schol {
+  margin-top: 20px;
+}
+
+body .schol {
+  background-color: #000000;
+  color: #ffffff;
+  
+}
