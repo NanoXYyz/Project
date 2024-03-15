@@ -15,6 +15,7 @@ body {
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
+
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
@@ -49,6 +50,14 @@ body {
   border-top: 1px solid rgba(255, 255, 255, .1);
   transition: .4s;
 }
+
+header img{
+  border: none;
+  outline: none;
+  height: 40%;
+  width: 30%;
+}
+
 
 ul li:hover a {
   padding-left: 50px;

@@ -7,7 +7,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: pink;
+  background-color: #f0f0f0f0;
 }
 
 body section {
@@ -161,3 +161,18 @@ section button {
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+  /*img-juruasn*/
+  
+  .jurusan-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Memusatkan gambar di tengah */
+  }
+  
+  .jurusan-img img {
+    margin: 10px; /* Ruang antara gambar */
+    width: 100px;
+    height: 100px;
+  }
+  

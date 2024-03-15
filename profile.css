@@ -35,13 +35,6 @@ body {
   user-select: none;
 }
 
-header img{
-  border: none;
-  outline: none;
-  height: 40%;
-  width: 30%;
-}
-
 .sidebar ul a{
   display: block;
   height: 100%;
@@ -55,6 +48,9 @@ header img{
   border-top: 1px solid rgba(255,255,255,.1);
   transition: .4s;
 }
+
+
+
 
 .icon-bar a:hover {
   background-color: #555; /* Darker background on hover */
